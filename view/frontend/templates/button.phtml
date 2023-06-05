@@ -1,0 +1,32 @@
+<?php
+/**
+ * Copyright © Keij, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Keij\AppleLogin\Block\Login\Button $block */
+
+$helper = $this->helper('\Keij\AppleLogin\Helper\Data');
+?>
+<?php if($helper->isEnabled() && !$helper->isCustomerLoggedIn()) :?>
+    <div class="block block-customer-login apple-signin">
+        <div class="space-container">
+            <span class="space-container-inner"><span><?= $block->escapeHtml(__('Or')) ?></span></span>
+        </div>
+        <a href="javascript:void(0)" id="signinwithapple_login" class="action create primary signinwithapple">
+            <span class="apple-btn-text">
+                <?= $block->escapeHtml(__('Sign in with apple')) ?>
+            </span>
+        </a>
+    </div>
+<?php endif;?>
+
+<script>
+    require(['jquery','jquery/ui'], function($){
+        $('#signinwithapple_login').on('click', function(event) {
+
+            window.open('<?php echo $block->getUrl('applelogin/apple/redirect');?>','popup','width=600,height=600');
+            return false;
+        });
+    });
+</script>
