@@ -14,7 +14,7 @@ Magento CE 2.4.x
 
 1. Create a folder {Magento root}/app/code/Keij/AppleLogin
 
-2. Download the corresponding [latest version](https://github.com/Keijsan/magento-2-apple-login.git)
+2. Download the corresponding [latest version](https://github.com/Keijsan/magento-2-apple-login/releases/)
 
 3. Copy the unzip content to the folder ({Magento root}/app/code/Keij/AppleLogin)
 
