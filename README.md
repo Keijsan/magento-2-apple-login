@@ -1,5 +1,8 @@
 # Magento2 Apple Login
 
+[![Latest Stable Version](http://poser.pugx.org/keij/module-apple-login/v)](https://packagist.org/packages/keij/module-apple-login)
+[![Total Downloads](http://poser.pugx.org/keij/module-apple-login/downloads)](https://packagist.org/packages/keij/module-apple-login)
+
 Extension Apple Login
 
 Let users register and sign in with one click with a Apple ID and make everything easy and friendly
@@ -17,6 +20,12 @@ Magento CE 2.4.x
 2. Download the corresponding [latest version](https://github.com/Keijsan/magento-2-apple-login/releases/)
 
 3. Copy the unzip content to the folder ({Magento root}/app/code/Keij/AppleLogin)
+
+### Using composer
+
+```
+composer require keij/module-apple-login
+```
 
 ### Completion of installation
 

@@ -1,13 +1,19 @@
 {
   "name": "keij/module-apple-login",
   "version": "1.0.0",
-  "description": "N/A",
+  "description": "Extension support login with apple id",
   "type": "magento2-module",
   "require": {
     "magento/framework": "*"
   },
+  "authors": [
+        {
+            "name": "Keijsan",
+            "email": "kakuzukyo2000@gmail.com"
+        }
+    ],
   "license": [
-    "Proprietary"
+    "OSL-3.0"
   ],
   "autoload": {
     "files": [
